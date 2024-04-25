@@ -1,1 +1,0 @@
-# skynodore.github.io
