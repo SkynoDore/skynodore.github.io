@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" CONTENT="Gabriel Vich">
+    <meta name="description" content="Bar y sala de entretenimiento, diversion sin limites">
+    <meta name="category" content="Bar">
+    <link rel="icon" type="image/jpg" href="../photos/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <!-- ESTILO-->
+    <link rel="stylesheet" href="../Style/main.css">
+    <script src="../bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
+    <!--Scripts JS-->
+    <script src="../JS/formulario.js"></script>
+    <script src="../JS/mapa.js"></script>
+    <title>Oh-nigiri!</title>
+    <!-- importo la api de maps con mi llave propia-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDS3x6krG3kS4-0LG5rHhBgjPWLXDEF7oM"></script>
+</head>
+
+<body onload="cargarmapa()">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+            <div class="container-fluid px-5">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand"><img src="../photos/logo2prov.png" alt="" height="26"></a>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../views/galeria.html">Galería</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="../views/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="container bg-light">
+                <h1>Contacto</h1>
+                <!--la funcion se llamara a cualquier cambio del formulario.-->
+                <form>
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input class="form-control" type="text" id="nombre" name="nombre" pattern="[A-Za-z ]{3,40}" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="apellido">Apellido</label>
+                        <input class="form-control" type="text" id="apellido" name="apellido" pattern="[A-Za-z ]{4,60}" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Número Movil</label>
+                        <input class="form-control" type="tel" id="phone" name="phone" pattern="[0-9]{9}" placeholder="Ej: 600208700" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo electrónico</label>
+                        <input class="form-control" type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" placeholder="Ej: Ohnigiri.rest@email.com" required>
+                    </div>
+                    <hr>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Comentarios</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" name="comentarios" rows="3"></textarea>
+                    </div>
+                    <label for="privacidad">Acepta nuestra <a href="#">política de privacidad?</a></label>
+                    <input type="checkbox" id="privacidad" name="privacidad" required>
+                    <button type="submit" id="enviar">Enviar</button>
+                    <button type="reset">Borrar</button>
+                </form>
+                <div id="mapa" class="mx-auto w-100" style="height: 400px;"></div>
+            </div>
+            
+        </section>
+    </main>
+    <footer class="bg-light">
+        <ul class="nav justify-content-center ">
+            <li class="nav-item ">
+                <a class="nav-link text-black" href="#" title="Aviso legal">©Ohnigiri! aviso legal</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-black" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-black" href="../views/galeria.html">Galería</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link  active" href="../views/contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item pt-1 px-1">
+                <a class="navbar-brand" href="https://www.facebook.com/" title="Nuestro Facebook"><img
+                        src="photos/fb.png" alt="" height="26"></a>
+            </li>
+            <li class="nav-item pt-1 px-1">
+                <a class="navbar-brand" href="https://www.instagram.com/slytrox/" title="Nuestro Instagram"><img
+                        src="photos/ig.png" alt="" height="26"></a>
+            </li>
+            <li class="nav-item pt-1 px-1">
+                <a class="navbar-brand" href="https://twitter.com/" title="Nuestro Twitter"><img src="photos/x.png"
+                        alt="" height="26"></a>
+            </li>
+        </ul>
+    </footer>
+</body>
+
+</html>
