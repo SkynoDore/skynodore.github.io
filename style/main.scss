@@ -1,20 +1,22 @@
 // Variable overrides first
-$primary: #f38b66;
-$secondary: #e09174;
+$primary: #21252B;
+$secondary: #e0cc74;
 $light: #f0efe6;
+$dark: #282C34;
 $enable-shadows: true;
 $prefix: "mo-";
 $font-size-root: 20px;
 // Then import Bootstrap
-@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../bootstrap-5.3.2-dist/scss/bootstrap.scss";
 
 // custom code
 
     :root {
         --light: #f0efe6;
+        --dark: #282C34;
     
         main {
-            background-color: #f0efe6;
+            background-color: var(--dark);
             font-family: "roboto";
             h1,h3 {
                 text-align: center; 
