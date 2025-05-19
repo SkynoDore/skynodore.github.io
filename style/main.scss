@@ -1,6 +1,7 @@
 // Variable overrides first
 $primary: #21252B;
 $secondary: #e0cc74;
+$light-text-emphasis: #e0cc74;
 $light: #f0efe6;
 $dark: #282C34;
 $enable-shadows: true;
@@ -11,28 +12,6 @@ $font-size-root: 20px;
 
 // custom code
 
-    :root {
-        --light: #f0efe6;
-        --dark: #282C34;
-    
-        main {
-            background-color: var(--dark);
-            font-family: "roboto";
-            h1,h3 {
-                text-align: center; 
-            }
-            h2, h3, h4, h5, h6 {
-                text-align: center; 
-                
-            }
+        i {
+            font-size: 80px;
         }
-}
-
-.cartas {
-    width: 10rem;
-}
-section {
-background-image: url("../photos/cute2.png");
-background-attachment: fixed;
-background-size: 800px;
-}

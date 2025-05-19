@@ -51,7 +51,7 @@
   --mo-info-text-emphasis: #055160;
   --mo-warning-text-emphasis: #664d03;
   --mo-danger-text-emphasis: #58151c;
-  --mo-light-text-emphasis: #495057;
+  --mo-light-text-emphasis: #e0cc74;
   --mo-dark-text-emphasis: #495057;
   --mo-primary-bg-subtle: #d3d3d5;
   --mo-secondary-bg-subtle: #f9f5e3;
@@ -12012,27 +12012,6 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-:root {
-  --light: #f0efe6;
-  --dark: #282C34;
-}
-:root main {
-  background-color: var(--dark);
-  font-family: "roboto";
-}
-:root main h1, :root main .h1, :root main h3, :root main .h3 {
-  text-align: center;
-}
-:root main h2, :root main .h2, :root main h3, :root main .h3, :root main h4, :root main .h4, :root main h5, :root main .h5, :root main h6, :root main .h6 {
-  text-align: center;
-}
-
-.cartas {
-  width: 10rem;
-}
-
-section {
-  background-image: url("../photos/cute2.png");
-  background-attachment: fixed;
-  background-size: 800px;
+i {
+  font-size: 80px;
 }/*# sourceMappingURL=main.css.map */
