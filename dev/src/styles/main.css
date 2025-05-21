@@ -74,7 +74,6 @@
   --mo-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --mo-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --mo-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
-  --mo-root-font-size: 20px;
   --mo-body-font-family: var(--mo-font-sans-serif);
   --mo-body-font-size: 1rem;
   --mo-body-font-weight: 400;
@@ -188,9 +187,6 @@
   box-sizing: border-box;
 }
 
-:root {
-  font-size: var(--mo-root-font-size);
-}
 @media (prefers-reduced-motion: no-preference) {
   :root {
     scroll-behavior: smooth;
@@ -12014,4 +12010,10 @@ textarea.form-control-lg {
 }
 i {
   font-size: 80px;
+}
+
+img {
+  width: 40%;
+  max-width: 600px;
+  aspect-ratio: 1/1;
 }/*# sourceMappingURL=main.css.map */

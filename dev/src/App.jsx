@@ -5,15 +5,11 @@ function App() {
   return (
     <>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <nav class="navbar mb-0 navbar-expand-lg navbar-dark bg-primary">
             <div class="container-fluid px-5">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+               
+                    <ul class="navbar-nav me-auto mb-lg-0 d-flex flex-row w-100 justify-content-between">
+                        <div class="d-flex w-50 gap-3">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="index.html">About</a>
                         </li>
@@ -23,23 +19,27 @@ function App() {
                         <li class="nav-item">
                             <a class="nav-link" href="views/contacto.html">Contact</a>
                         </li>
+                        </div>
+                        <div class="d-flex">
                         <li class="nav-item">
-                            <a class="nav-link" href="views/contacto.html">https://github.com/SkynoDore</a>
+                            <a class="nav-link" href="https://github.com/SkynoDore">Github</a>
                         </li>
+                        </div>
                     </ul>
-                </div>
+         
             </div>
         </nav>
     </header>
         <main class="text-light bg-dark">
             <section class="p-5">
-                <div class="container p-5 pt-1 d-block d-none d-md-block">
+                <div class="container p-5 pt-1 s">
                 <div class="d-flex flex-row">
                     <div class="d-flex flex-column justify-content-center gap-3 m-3">
                         <h1>Hello, I'm <span class="text-light-emphasis">Gabriel Vich</span></h1>
                         <h2>Front End Developer</h2>
                     </div>
-                
+                <img class="rounded-circle object-fit-cover" src="/images/gabriel-main.jpeg" alt="Gabriel Vich Portrait" />
+
                 </div>
                 </div>
             </section>

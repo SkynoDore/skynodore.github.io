@@ -6,13 +6,19 @@ $light: #f0efe6;
 $dark: #282C34;
 $enable-shadows: true;
 $prefix: "mo-";
-$font-size-root: 20px;
-// Then import Bootstrap
-@import "~bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
 
 
 // custom code
 
         i {
             font-size: 80px;
+        }
+
+        img {
+            width: 40%;
+            max-width: 600px;
+            aspect-ratio: 1 / 1
         }
