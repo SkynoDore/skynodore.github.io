@@ -17,8 +17,45 @@ $prefix: "mo-";
             font-size: 80px;
         }
 
-        img {
+        #portrait {
             width: 40%;
             max-width: 600px;
             aspect-ratio: 1 / 1
         }
+
+        .image-container {
+            position: relative; 
+            cursor: pointer;
+            width: 300px;
+            height: 450px;
+        }
+
+        .image-container img {
+            object-position: top;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.3);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 2rem;
+            opacity: 1;
+            transition: background-color 0.3s;
+        }
+
+        .image-container:hover .overlay {
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+
