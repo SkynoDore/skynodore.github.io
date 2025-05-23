@@ -13,6 +13,13 @@ $prefix: "mo-";
 
 // custom code
 
+        
+        body{
+            --dark: #282C34;
+            --light: #f0efe6;
+            background-color: var(--dark);
+            color: var(--light);
+        }
         i {
             font-size: 80px;
         }
@@ -58,4 +65,13 @@ $prefix: "mo-";
             background-color: rgba(0, 0, 0, 0.5);
         }
 
+        @media (min-width: 768px) {
+    
+        section {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto 0 auto;
+        }
+        
+    }
 

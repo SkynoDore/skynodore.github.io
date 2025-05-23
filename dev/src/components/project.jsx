@@ -1,7 +1,7 @@
 export default function Project ({ title, image}){
     return (
                 <div className="bg-primary p-3 rounded-2 gap-3">
-                    <h4>{title}</h4>
+                    <h4 className="text-break"  style={{ width: "300px" }}>{title}</h4>
                     <div className="image-container">
                         <img src={image} alt={title} />
                         <div className="overlay">

@@ -12008,6 +12008,13 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+body {
+  --dark: #282C34;
+  --light: #f0efe6;
+  background-color: var(--dark);
+  color: var(--light);
+}
+
 i {
   font-size: 80px;
 }
@@ -12053,4 +12060,12 @@ i {
 
 .image-container:hover .overlay {
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media (min-width: 768px) {
+  section {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto 0 auto;
+  }
 }/*# sourceMappingURL=main.css.map */

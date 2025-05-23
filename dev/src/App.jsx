@@ -6,7 +6,8 @@ function App() {
   return (
     <>
     <Header/>
-        <main className="text-light bg-dark">
+    
+        <main>
             <section className="p-4 p-md-5">
                 <div className="pt-1">
                 <div className="d-flex flex-row justify-content-around">
@@ -20,7 +21,7 @@ function App() {
                 </div>
             </section>
 
-            <section className="p-4 p-md-5 w-100 w-md-50">
+            <section className="p-4 p-md-5 ">
                 <h3 className="text-center pb-3">About me</h3>
                 <p>
                     <span className="text-light-emphasis">Full-Stack Web Developer </span>with two years of experience in web design and application development using Laravel and React. I am looking for a Junior Web Developer position to continue growing professionally and applying my knowledge.
@@ -28,8 +29,8 @@ function App() {
 
                 </p>
             </section>
-
-            <section className="p-4 p-md-5 w-100 w-md-75">
+        </main>
+            <section className="p-4 p-md-5 ">
             <h3 className="text-center pb-3">Skills</h3>
             <div className="d-flex justify-content-center gap-3 flex-wrap">
                 <i className="devicon-html5-plain-wordmark" title="HTML5"></i>
@@ -50,17 +51,16 @@ function App() {
             </div>
             </section>
 
-            <section className="p-4 p-md-5 w-100 w-md-75">
+            <section className="p-4 p-md-5 ">
             <h3 className="text-center pb-3">Projects overview</h3>
-                <div className="projects d-flex flex-row justify-content-center gap-3">
-                        <Project title="Red social en Laravel" image="images/diseño1.jpeg"/>
+                <div className="projects d-flex flex-row flex-wrap justify-content-center gap-3">
+                        <Project title="Red social en Laravel" image="images/red-social.png"/>
                         <Project title="Portafolio En React" image="images/diseño1.jpeg"/>
                         <Project title="Página en Wordpress" image="images/diseño1.jpeg"/>
-                        
-                    
+                        <Project title="Gestor de contenido y cuentas en PHP" image="images/gestor-php.png"/>
                 </div>
             </section>
-        </main>
+        
     </>
   )
 }
