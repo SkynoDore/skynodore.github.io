@@ -44,7 +44,7 @@ export default function Home() {
             </section>
 
             <section className="p-4 p-md-5 ">
-            <h3 className="text-center pb-3">Projects overview</h3>
+            <h3 className="text-center pb-3">Projects</h3>
                 <div className="projects d-flex flex-row flex-wrap justify-content-center gap-3">
                         <Project title="Red social en Laravel" image="images/red-social.png"/>
                         <Project title="Portafolio En React" image="images/diseño1.jpeg"/>
