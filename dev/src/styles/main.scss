@@ -13,13 +13,16 @@ $prefix: "mo-";
 
 // custom code
 
-        
+        a{
+            color: var(--light);
+        }
         body{
             --dark: #282C34;
             --light: #f0efe6;
             background-color: var(--dark);
             color: var(--light);
         }
+
         i {
             font-size: 80px;
         }
