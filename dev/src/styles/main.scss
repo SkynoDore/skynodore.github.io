@@ -21,6 +21,10 @@ $prefix: "mo-";
             --light: #f0efe6;
             background-color: var(--dark);
             color: var(--light);
+            height: 100%;
+        }
+        main{
+            min-height: 90vh;
         }
 
         i {
@@ -67,7 +71,7 @@ $prefix: "mo-";
         .image-container:hover .overlay {
             background-color: rgba(0, 0, 0, 0.5);
         }
-
+        
         @media (min-width: 768px) {
     
         section {

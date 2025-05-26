@@ -12017,6 +12017,11 @@ body {
   --light: #f0efe6;
   background-color: var(--dark);
   color: var(--light);
+  height: 100%;
+}
+
+main {
+  min-height: 90vh;
 }
 
 i {
