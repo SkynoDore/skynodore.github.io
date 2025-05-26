@@ -46,8 +46,8 @@ export default function Home() {
             <section className="p-4 p-md-5 ">
             <h3 className="text-center pb-3">Projects</h3>
                 <div className="projects d-flex flex-row flex-wrap justify-content-center gap-3">
-                        <Project title="Social Network on Laravel" image="images/red-social.png"/>
-                        <Project title="React Portfolio" image="images/portfolio.jpeg"/>
+                        <Project title="Social Network on Laravel" image="images/red-social.png" link="/socialnetwork"/>
+                        <Project title="React Portfolio" image="images/portfolio.jpeg" link="/reactportfolio"/>
                         <Project title="Wordpress Pages" image="images/diseño1.jpg"/>
                         <Project title="Content and user management" image="images/gestor-php.png"/>
                 </div>
