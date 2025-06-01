@@ -1,4 +1,5 @@
 import Project from "../components/project";
+import { Link } from 'react-router-dom'
 export default function Home() {
   return (
     <main>
@@ -10,6 +11,9 @@ export default function Home() {
               <span className="text-light-emphasis">Gabriel Vich</span>
             </h1>
             <h2>Front End Developer</h2>
+            <Link className="nav-link" to="/contact"k>
+            <button className="btn btn-primary px-4">Contact with me!</button>
+            </Link>
           </div>
           <img
             id="portrait"
@@ -80,6 +84,7 @@ export default function Home() {
           <Project
             title="Content and user management"
             image="images/gestor-php.png"
+            link="/contentmanager"
           />
         </div>
       </section>
@@ -92,21 +97,9 @@ export default function Home() {
 Beatriz González Pérez</h3>
 <h4>Project Manager en BSG Spain</h4>
             <p>
-              Tuve el placer de ser la responsable directa de Gabriel durante su
-              tiempo en BSG, donde destacó como un profesional comprometido y
-              altamente capacitado en desarrollo y diseño web con WordPress y
-              FTP, así como en estrategias SEO. Desde el primer día, demostró
-              una gran capacidad de adaptación y aprendizaje, implementando con
-              éxito diversas acciones de optimización que mejoraron
-              significativamente la visibilidad y el rendimiento de nuestros
-              proyectos. Su enfoque meticuloso y su habilidad para entender las
-              necesidades de cada cliente hicieron que todos quedaran plenamente
-              satisfechos con su trabajo. Además de su talento técnico, Gabriel
-              es una persona responsable, trabajadora y con una gran actitud
-              profesional. Fue un verdadero activo para nuestro equipo, y no
-              tengo dudas de que aportará un gran valor a cualquier empresa que
-              confíe en su talento.
+              I had the pleasure of being Gabriel’s direct supervisor during his time at BSG, where he stood out as a committed and highly skilled professional in web development and design using WordPress and FTP, as well as in SEO strategies. From day one, he demonstrated a strong ability to adapt and learn quickly, successfully implementing various optimization actions that significantly improved the visibility and performance of our projects. His meticulous approach and his ability to understand each client’s needs ensured that everyone was fully satisfied with his work. In addition to his technical talent, Gabriel is a responsible, hardworking person with a great professional attitude. He was a true asset to our team, and I have no doubt that he will bring great value to any company that trusts in his talent.
             </p>
+            
           </div>
 
           <div>
@@ -114,16 +107,9 @@ Beatriz González Pérez</h3>
             <h4>
                 Co-founder & CEO en Bluebill</h4>
             <p>
-              Supervisaba directamente a Gabriel 17 de marzo de 2025, Álvaro
-              supervisaba directamente a Gabriel Gabriel es un profesional
-              altamente competente, con sólidos conocimientos en WordPress, PHP,
-              Laravel y otros lenguajes de programación relacionados con el
-              diseño y desarrollo web. A lo largo de su estancia en BSG,
-              demostró una gran capacidad para desarrollar soluciones
-              innovadoras y eficientes, así como un compromiso ejemplar con los
-              objetivos y plazos establecidos. Gabriel desarrolló sitios web funcionales,
-                atractivos y adaptados a las necesidades específicas de nuestros
-                clientes, garantizando altos estándares de calidad.
+              I directly supervised Gabriel on March 17, 2025.
+Gabriel is a highly competent professional with strong knowledge of WordPress, PHP, Laravel, and other programming languages related to web design and development. During his time at BSG, he demonstrated great ability to develop innovative and efficient solutions, as well as an exemplary commitment to established goals and deadlines. Gabriel developed functional, visually appealing websites tailored to the specific needs of our clients, consistently ensuring high standards of quality.
+
               </p>
           </div>
         </div>

@@ -4,7 +4,7 @@ export default function Header() {
     return (
         <header>
         <nav className="navbar mb-0 navbar-expand-lg navbar-dark bg-primary">
-            <div className="container-fluid px-5">
+            <div className="container-fluid px-4">
                
                     <ul className="navbar-nav me-auto mb-lg-0 d-flex flex-row w-100 justify-content-between">
                         <div className="d-flex w-50 gap-3">
@@ -15,11 +15,11 @@ export default function Header() {
                             <Link className="nav-link" to="/contact">Contact</Link>
                         </li>
                         </div>
-                        <div className="d-flex">
-                        <li className="nav-item d-flex flew-row align-items-center">
-                            <a className="nav-link" href="https://github.com/SkynoDore">
+                        <div>
+                        <li className="nav-item">
+                            <a className="nav-link d-flex flew-row" href="https://github.com/SkynoDore">
                             <i className="devicon-github-original fs-5 px-2"></i>
-                            Github</a>
+                            <span className='d-none d-md-flex'>Github</span></a>
                         </li>
                         </div>
                     </ul>

@@ -5,6 +5,7 @@ import Home from './pages/Home'
 import Contact from './pages/Contact'
 import SocialNetwork from './pages/SocialNetwork.jsx'
 import WordpressPages from './pages/WordpressPages.jsx';
+import ContentManager from './pages/ContentManager.jsx';
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/socialnetwork" element={<SocialNetwork />} />
         <Route path="/wordpresspages" element={<WordpressPages />} />
+        <Route path="/contentmanager" element={<ContentManager />} />
       </Routes>
       <Footer/>
     </>

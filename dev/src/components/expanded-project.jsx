@@ -5,7 +5,7 @@ export default function ExpandedProject ({ title, image, github, description}){
                         <div className="text-center pb-3">
                             <h1>{title}</h1>
                         </div>
-                        <div className="text-center w-100">
+                        <div className="max-width-900 mx-auto">
                         <img className="w-100" src={image} alt={title} />
                         </div>
                     

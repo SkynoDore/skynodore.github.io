@@ -12067,8 +12067,17 @@ i {
   transition: background-color 0.3s;
 }
 
+.max-width-900 {
+  max-width: 900px;
+}
+
 .image-container:hover .overlay {
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+.btn {
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 @media (min-width: 768px) {
