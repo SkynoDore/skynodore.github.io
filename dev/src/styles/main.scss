@@ -78,6 +78,8 @@ $prefix: "mo-";
 
         .btn {
             width: fit-content;
+                box-shadow: none;
+                --mo-btn-box-shadow: none;
         }
         
         @media (min-width: 768px) {
