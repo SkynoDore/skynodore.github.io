@@ -116,7 +116,7 @@ export default function Home() {
           />
           <Project
             title="Wordpress Pages"
-            image="images/diseño1.jpg"
+            image="images/diseño1.png"
             link="/wordpresspages"
           />
           <Project
