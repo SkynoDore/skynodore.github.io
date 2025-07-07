@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 export default function Project ({ title, image, link}){
     return (
         <Link className="nav-link" to={link}>
-                <div className="bg-primary p-3 rounded-2 gap-3 h-100">
+                <div className="bg-primary p-3 rounded-2 gap-3 h-100 d-flex flex-column align-items-center justify-content-center">
                     <h4 className="text-break mb-3"  style={{ width: "300px" }}>{title}</h4>
                     <div className="image-container">
                         <img src={image} alt={title} />
