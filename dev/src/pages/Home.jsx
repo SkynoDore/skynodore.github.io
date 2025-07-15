@@ -1,7 +1,18 @@
 import Project from "../components/project";
 import { Link } from "react-router-dom";
+import { useLocation } from 'react-router-dom';
+import { useEffect } from "react";
 export default function Home() {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash === '#projects') {
+      const el = document.getElementById('projects');
+      if (el) el.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, [location]);
   return (
+
     <main>
       <section className="p-4 p-md-5">
         <div className="d-flex flex-row justify-content-around">
@@ -11,7 +22,7 @@ export default function Home() {
               <span className="text-light-emphasis">Gabriel Vich</span>
             </h1>
             <h2>Front End Developer</h2>
-            <Link className="nav-link" to="/contact" k>
+            <Link className="nav-link" to="/contact">
               <button className="btn btn-primary px-4">Contact with me!</button>
             </Link>
           </div>
@@ -79,7 +90,7 @@ export default function Home() {
 
             <div className="d-flex justify-content-center gap-3 flex-wrap">
               <i className="devicon-nodejs-plain-wordmark" title="Node.js"></i>
-              <i class="devicon-express-original" title="Express"></i>
+              <i className="devicon-express-original" title="Express"></i>
               <i className="devicon-laravel-original" title="Laravel"></i>
               <i className="devicon-php-plain" title="PHP"></i>
               <i className="devicon-java-plain" title="Java"></i>
@@ -106,7 +117,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="p-4 p-md-5 ">
+      <section className="p-4 p-md-5" id="projects">
         <h3 className="text-center pb-3">Projects</h3>
         <div className="projects d-flex flex-row flex-wrap justify-content-center gap-3">
           <Project
@@ -116,7 +127,7 @@ export default function Home() {
           />
           <Project
             title="Wordpress Pages"
-            image="images/diseño1.png"
+            image="images/diseño3.jpeg"
             link="/wordpresspages"
           />
           <Project

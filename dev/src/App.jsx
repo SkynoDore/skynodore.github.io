@@ -6,11 +6,13 @@ import Contact from './pages/Contact'
 import SocialNetwork from './pages/SocialNetwork.jsx'
 import WordpressPages from './pages/WordpressPages.jsx';
 import ContentManager from './pages/ContentManager.jsx';
+import ScrollToTop from './components/ScrollToTop.jsx';
 
 function App() {
 
   return (
     <>
+      <ScrollToTop />
     <Header/>
       <Routes>
         <Route path="/" element={<Home />} />

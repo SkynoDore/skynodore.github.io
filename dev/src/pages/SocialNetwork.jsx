@@ -1,21 +1,33 @@
 import ExpandedProject from '../components/expanded-project';
 export default function SocialNetwork() {
     return ( 
-    <ExpandedProject title="Social Network on Laravel" image="images/social-network.png"
-    github="https://github.com/SkynoDore/laravel-social-network" description="*WORK IN PROGRESS* This is a social network prototype built with Laravel and Blade, styled using Tailwind CSS, enhanced with Alpine.js for interactivity, and powered by a MariaDB database.
-
+    <ExpandedProject title="Social Network on Laravel" images={["images/social-network.png", "images/social-network2.jpeg", "images/social-network3.jpeg", "images/social-network4.jpeg"]}
+    github="https://github.com/SkynoDore/laravel-social-network" description="*WORK IN PROGRESS*<br> This is a social network prototype built with Laravel and Blade, styled using Tailwind CSS, enhanced with Alpine.js for interactivity, and powered by a MariaDB database.
+<p>
 Current features include:
+</p>
 
-Simple user registration and login
+<li>Simple user registration and login
+</li>
 
-User profile pages
+<li>Profile customization
+</li>
 
-Discussion forums
+<li>Park finder with multiple filters and geolocation
+</li>
 
-Image-based posts
+<li>Image-based posts
+</li>
 
-User comments system
+<li>User comments system
+</li>
 
-The goal is to gradually expand it into a more complete and interactive platform."/>
+<li>like and dislike system for posts</li><br>
+
+<p>
+The project is still in its early stages, with basic functionality implemented.
+
+The goal is to gradually expand it into a more complete and interactive platform.</p>
+"/>
     )
 }
