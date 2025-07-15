@@ -122,7 +122,7 @@ export default function Home() {
         <div className="projects d-flex flex-row flex-wrap justify-content-center gap-3">
           <Project
             title="Social Network on Laravel"
-            image="images/social-network.png"
+            image="images/social-network-PROTOTYPE.png"
             link="/socialnetwork"
           />
           <Project

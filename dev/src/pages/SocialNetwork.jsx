@@ -1,7 +1,7 @@
 import ExpandedProject from '../components/expanded-project';
 export default function SocialNetwork() {
     return ( 
-    <ExpandedProject title="Social Network on Laravel" images={["images/social-network.png", "images/social-network2.jpeg", "images/social-network3.jpeg", "images/social-network4.jpeg"]}
+    <ExpandedProject title="Social Network on Laravel" images={["images/social-network.jpeg", "images/social-network2.jpeg", "images/social-network3.jpeg", "images/social-network4.jpeg"]}
     github="https://github.com/SkynoDore/laravel-social-network" description="*WORK IN PROGRESS*<br> This is a social network prototype built with Laravel and Blade, styled using Tailwind CSS, enhanced with Alpine.js for interactivity, and powered by a MariaDB database.
 <p>
 Current features include:
