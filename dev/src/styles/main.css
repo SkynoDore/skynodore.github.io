@@ -12015,6 +12015,7 @@ a {
 body {
   --dark: #282C34;
   --light: #f0efe6;
+  --primary: #21252B;
   background-color: var(--dark);
   color: var(--light);
   height: 100%;
@@ -12091,6 +12092,7 @@ i {
      object-fit: cover;
   -o-object-position: top;
      object-position: top;
+  border: var(--primary) 10px solid;
 }
 
 .thumbnail {
@@ -12102,6 +12104,7 @@ i {
   -o-object-position: top;
      object-position: top;
   cursor: pointer;
+  border: var(--primary) 10px solid;
 }
 
 .thumbnail:hover {
@@ -12110,10 +12113,16 @@ i {
   transition: opacity 0.3s ease;
 }
 
-@media (min-width: 768px) {
-  section {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto 0 auto;
+section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto 0 auto;
+}
+
+@media (max-width: 768px) {
+  .thumbnail {
+    width: 45%;
+    height: auto;
+    max-height: 90px;
   }
 }/*# sourceMappingURL=main.css.map */

@@ -17,14 +17,14 @@ export default function ExpandedProject({
     <main>
       <section className="p-4 p-md-5">
         <Link className="nav-link" to="/#projects">&lt; &lt; Go back</Link>
-        <div className="text-center pb-3">
+        <div className="text-center py-3">
           <h1>{title}</h1>
         </div>
-        <div className="d-flex flex-column flex-md-row justify-content-center gap-4 mt-2 mb-5 max-width-900 mx-auto">
+        <div className="d-flex flex-column flex-md-row  justify-content-center gap-3 mt-2 mb-2 mb-md-5 max-width-900 mx-auto">
           <img id="main-image" src={mainImage} alt={title} />
 
           {/* Miniaturas en lateral o debajo, aquí simplificado en horizontal */}
-          <div className="d-flex flex-row flex-md-column gap-4 mb-4">
+          <div className="d-flex flex-row flex-md-column flex-wrap gap-3 align-items-center justify-content-md-start justify-content-center">
             {thumbnails.map((img, idx) => (
               <img
                 key={idx}
