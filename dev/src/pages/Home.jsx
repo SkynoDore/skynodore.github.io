@@ -29,7 +29,7 @@ export default function Home() {
           <img
             id="portrait"
             className="rounded-circle object-fit-cover"
-            src="/images/gabriel-main.jpeg"
+            src="/images/gabriel-main.avif"
             alt="Gabriel Vich Portrait"
           />
         </div>
@@ -122,17 +122,17 @@ export default function Home() {
         <div className="projects d-flex flex-row flex-wrap justify-content-center gap-3">
           <Project
             title="Social Network on Laravel"
-            image="images/social-network-PROTOTYPE.png"
+            image="images/social-network-PROTOTYPE.avif"
             link="/socialnetwork"
           />
           <Project
             title="Wordpress Pages"
-            image="images/diseño3.jpeg"
+            image="images/diseño3.avif"
             link="/wordpresspages"
           />
           <Project
             title="Content and user management"
-            image="images/gestor-php.png"
+            image="images/gestor-php.avif"
             link="/contentmanager"
           />
         </div>
