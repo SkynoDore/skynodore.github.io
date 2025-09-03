@@ -1,29 +1,41 @@
 import Project from "../components/project";
 import { Link } from "react-router-dom";
-import { useLocation } from 'react-router-dom';
+import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
 export default function Home() {
   const location = useLocation();
 
   useEffect(() => {
-    if (location.hash === '#projects') {
-      const el = document.getElementById('projects');
-      if (el) el.scrollIntoView({ behavior: 'smooth' });
+    if (location.hash === "#projects") {
+      const el = document.getElementById("projects");
+      if (el) el.scrollIntoView({ behavior: "smooth" });
     }
   }, [location]);
   return (
-
     <main>
       <section className="p-4 p-md-5">
         <div className="d-flex flex-row justify-content-around">
           <div className="d-flex flex-column justify-content-center gap-3">
-            <h1>
-              Hello, I'm{" "}
-              <span className="text-light-emphasis">Gabriel Vich</span>
+            <h1 className="fs-2">
+              Hello, I'm
+              <span className="text-light-emphasis"> Gabriel Vich</span>
             </h1>
-            <h2>Front End Developer</h2>
-            <Link className="nav-link" to="/contact">
-              <button className="btn btn-primary px-4">Contact with me!</button>
+            <h2 className="text-gray fs-1">Front End Developer</h2>
+            <div className="d-flex flex-row gap-3">
+              <div className="bg-primary p-2 p-md-3 rounded-4">
+                <h3 className="text-light-emphasis">+2 years</h3>
+                <p>working experience</p>
+              </div>
+
+              <div className="bg-primary p-2 p-md-3 rounded-4">
+                <h3 className="text-light-emphasis">+3 years</h3>
+                <p>Learning & solo projects</p>
+              </div>
+            </div>
+            <Link className="nav-link pt-2" to="/contact">
+              <button className="btn btn-secondary  px-4">
+                Contact me!
+              </button>
             </Link>
           </div>
           <img
@@ -33,33 +45,22 @@ export default function Home() {
             alt="Gabriel Vich Portrait"
           />
         </div>
-        <div className="d-flex flex-row justify-content-center gap-2 pt-5">
-          <div className="bg-primary p-2 p-md-4 rounded-4">
-            <h3 className="text-light-emphasis">+2 years</h3>
-            <p>working experience</p>
-          </div>
-
-          <div className="bg-primary p-2 p-md-4 rounded-4">
-            <h3 className="text-light-emphasis">+3 years</h3>
-            <p>Learning & solo projects</p>
-          </div>
-        </div>
       </section>
 
       <section className="p-4 p-md-5 ">
-        <h3 className="text-center pb-3">About me</h3>
         <p>
-          <span className="text-light-emphasis">Front End Developer </span>with
-          two years of experience in web design and application development
+          <span className="text-light-emphasis">Front End Developer </span> with
+          three years of experience in web design and application development
           using <span className="text-light-emphasis">Laravel and React</span>.
-          I am looking for a Front end/Full Stack Web Developer position to
-          continue growing professionally and applying my knowledge. I have
-          worked with <span className="text-light-emphasis">Scrum </span>agile
-          methodology. I have strong problem-solving skills, learn quickly, and
-          enjoy acquiring new knowledge, so I am constantly improving my skills.
+          Looking for a Front end/Full Stack Web Developer position to continue
+          growing professionally and applying my knowledge. I have worked with{" "}
+          <span className="text-light-emphasis">Scrum </span>agile methodology.
+          I have strong problem-solving skills, learn quickly, and enjoy
+          acquiring new knowledge, so I am constantly improving my skills.
         </p>
       </section>
       <section className="p-4 p-md-5 ">
+        <h3 className="text-center pb-3 text-light-emphasis">Skills</h3>
         <div className="mb-4">
           <div className="bg-primary p-2 p-md-4 rounded-4">
             <h4 className="text-center mb-3">Frontend skills</h4>
@@ -108,7 +109,7 @@ export default function Home() {
 
         {/* SEO */}
         <div className="bg-primary p-2 p-md-4 rounded-4">
-          <h4 className="text-center mb-3">Integral SEO Service</h4>
+          <h4 className="text-center mb-3">SEO</h4>
           <p className="text-center">
             SEO audits, on-page/off-page optimization, content strategies,
             technical SEO, Google Search Console, sitemap/robots setup, keyword
@@ -117,8 +118,32 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="p-4 p-md-5 ">
+        <h3 className="text-center pb-3 text-light-emphasis">Experience</h3>
+        <div className="bg-primary p-md-4 rounded-4 d-flex flex-row">
+          <ul>
+            <li className="p-2">
+              <div className="d-flex flex-row justify-content-between">
+                <div>
+                  <h3 className="text-light-emphasis">Full Stack Developer</h3>
+                  <p>BSG Spain</p>
+                </div>
+                <p> March 2023 - March 2025</p>
+              </div>
+              <p>
+                Implemented key features and improvements in a billing app built
+                with Laravel, optimizing performance and scalability, and
+                reducing duplicated code by 40%. Designed and developed websites
+                from Figma prototypes to production using Next.js (React),
+                Laravel, or WordPress.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
       <section className="p-4 p-md-5" id="projects">
-        <h3 className="text-center pb-3">Projects</h3>
+        <h3 className="text-center pb-3 text-light-emphasis">Projects</h3>
         <div className="projects d-flex flex-row flex-wrap justify-content-center gap-3">
           <Project
             title="Social Network on Laravel"
@@ -139,7 +164,7 @@ export default function Home() {
       </section>
 
       <section className="p-4 p-md-5 ">
-        <h3 className="text-center pb-3">Recomendations</h3>
+        <h3 className="text-center pb-3 text-light-emphasis">Recomendations</h3>
         <div className="d-flex flex-row flex-wrap justify-content-center gap-5 pt-5">
           <div>
             <h3 className="text-light-emphasis">Beatriz González Pérez</h3>

@@ -6,6 +6,8 @@ $light: #f0efe6;
 $dark: #282C34;
 $enable-shadows: true;
 $prefix: "mo-";
+$font-size-base:              1rem; 
+$h1-font-size: $font-size-base * 3.5;
 
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
