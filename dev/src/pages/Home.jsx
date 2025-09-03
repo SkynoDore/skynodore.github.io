@@ -13,7 +13,7 @@ export default function Home() {
   }, [location]);
   return (
     <main>
-      <section className="p-4 p-md-5">
+      <section className="py-4 py-md-5">
         <div className="d-flex flex-row justify-content-around">
           <div className="d-flex flex-column justify-content-center gap-3">
             <h1 className="fs-2">
@@ -144,7 +144,7 @@ export default function Home() {
 
       <section className="p-4 p-md-5" id="projects">
         <h3 className="text-center pb-3 text-light-emphasis">Projects</h3>
-        <div className="projects d-flex flex-row flex-wrap justify-content-center gap-3">
+        <div className="projects d-flex flex-row flex-wrap justify-content-between gap-3">
           <Project
             title="Social Network on Laravel"
             image="images/social-network-PROTOTYPE.avif"
