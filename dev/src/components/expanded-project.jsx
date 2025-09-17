@@ -11,7 +11,7 @@ export default function ExpandedProject({
   const [mainImage, setMainImage] = useState(images[0]);
 
   // miniaturas: todas las demás imágenes excepto la principal actual
-  const thumbnails = images.filter((img) => img !== mainImage);
+  const thumbnails = images;
   return (
     
     <main>
@@ -30,7 +30,7 @@ export default function ExpandedProject({
                 key={idx}
                 src={img}
                 alt={`${title} thumbnail ${idx}`}
-                onClick={() => setMainImage(img)}
+                onMouseEnter={() => setMainImage(img)}
                 className="thumbnail"
               />
             ))}

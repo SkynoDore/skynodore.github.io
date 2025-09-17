@@ -13,27 +13,27 @@ export default function Home() {
   }, [location]);
   return (
     <main>
-      <section className="py-4 py-md-5">
-        <div className="d-flex flex-row justify-content-around">
+      <section className="p-4 p-md-5">
+        <div className="d-flex flex-row justify-content-between">
           <div className="d-flex flex-column justify-content-center gap-3">
             <h1 className="fs-2">
               Hello, I'm
               <span className="text-light-emphasis"> Gabriel Vich</span>
             </h1>
             <h2 className="text-gray fs-1">Front End Developer</h2>
-            <div className="d-flex flex-row gap-3">
-              <div className="bg-primary p-2 p-md-3 rounded-4">
+            <div className="tags d-flex flex-row gap-3">
+              <div className="tag bg-primary p-2 p-md-3 rounded-4">
                 <h3 className="text-light-emphasis">+2 years</h3>
                 <p>working experience</p>
               </div>
 
-              <div className="bg-primary p-2 p-md-3 rounded-4">
+              <div className="tag bg-primary p-2 p-md-3 rounded-4">
                 <h3 className="text-light-emphasis">+3 years</h3>
                 <p>Learning & solo projects</p>
               </div>
             </div>
-            <Link className="nav-link pt-2" to="/contact">
-              <button className="btn btn-secondary  px-4">
+            <Link className="nav-link pt-2 btn-link" to="/contact">
+              <button className="btn btn-secondary px-4">
                 Contact me!
               </button>
             </Link>
@@ -144,7 +144,7 @@ export default function Home() {
 
       <section className="p-4 p-md-5" id="projects">
         <h3 className="text-center pb-3 text-light-emphasis">Projects</h3>
-        <div className="projects d-flex flex-row flex-wrap justify-content-between gap-3">
+        <div className="projects d-flex flex-md-row flex-column flex-wrap justify-content-between gap-3">
           <Project
             title="Social Network on Laravel"
             image="images/social-network-PROTOTYPE.avif"

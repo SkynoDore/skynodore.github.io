@@ -6,7 +6,7 @@ $light: #f0efe6;
 $dark: #282C34;
 $enable-shadows: true;
 $prefix: "mo-";
-$font-size-base:              1rem; 
+$font-size-base: 1rem;
 $h1-font-size: $font-size-base * 3.5;
 
 @import "../../node_modules/bootstrap/scss/bootstrap";
@@ -87,41 +87,89 @@ i {
 
 #main-image {
     width: 100%;
-    max-width: 900px;
+    max-width: 950px;
     height: 100%;
-    max-height: 900px;
+    max-height: 1200px;
     object-fit: cover;
     object-position: top;
     border: var(--primary) 10px solid;
 }
 
 .thumbnail {
-    width: 250px;
-    height: auto;
-    max-height: 400px;
+    margin-top: 10px;
+    width: 80px;
+    height: 80px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
     object-fit: cover;
     object-position: top;
-    cursor: pointer;
-    border: var(--primary) 10px solid;
 }
 
 .thumbnail:hover {
-    opacity: 0.7;
-    /* o prueba 0.5 para más oscuro */
-    transition: opacity 0.3s ease;
+    border: white 6px solid;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    transform: scale(1.1);
+    cursor:pointer;
 }
 
 section {
-        width: 100%;
-        max-width: 1200px;
-        margin: 0 auto 0 auto;
-    }
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto 0 auto;
+}
+
+.project-title {
+    width: 300px;
+}
 
 @media (max-width: 768px) {
+
+    .image-container {
+        margin: auto;
+        width: 90%;
+        height: 600px;
+    }
+
+    .project-title {
+        width: 100%;
+    }
+
+    #portrait {
+        width: 35vw;
+        height: 35vw;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 460px) {
 
     .thumbnail {
         width: 45%;
         height: auto;
         max-height: 90px;
+    }
+
+    #portrait {
+        width: 35vw;
+        height: 35vw;
+        max-width: 162px;
+        max-height: 162px;
+        margin-top: 20px;
+    }
+
+    .tags {
+        margin-right: -35vw;
+    }
+
+    .tag {
+        display: flex;
+        flex-grow: 1;
+    }
+
+    .btn-link {
+        margin-right: -35vw;
+    }
+
+    .btn {
+        width: 100%;
     }
 }
