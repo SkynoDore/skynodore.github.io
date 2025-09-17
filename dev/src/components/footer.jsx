@@ -1,7 +1,6 @@
 
 export default function Footer() {
     return (
-        <header>
         <nav className="bg-primary">
             <div className="container-fluid p-4 p-md-5 pb-md-4">
                         <div className="d-flex flex-column align-items-center">
@@ -10,6 +9,5 @@ export default function Footer() {
                         </div>
             </div>
         </nav>
-    </header>
     );
 }
