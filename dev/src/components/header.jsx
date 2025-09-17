@@ -17,7 +17,7 @@ export default function Header() {
                         </div>
                         <div>
                         <li className="nav-item">
-                            <a className="nav-link d-flex flew-row" href="https://github.com/SkynoDore">
+                            <a className="nav-link d-flex flew-row" href="https://github.com/SkynoDore" target='_blank'>
                             <i className="devicon-github-original fs-5 px-2"></i>
                             <span className='d-none d-md-flex'>Github</span></a>
                         </li>

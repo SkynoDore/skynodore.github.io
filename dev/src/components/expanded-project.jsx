@@ -37,7 +37,7 @@ export default function ExpandedProject({
           </div>
         </div>
         <div className="text-center pb-5">
-          <a className="nav-link" href={github}>
+          <a className="nav-link" href={github} target="_blank">
             repository on
             <i className="devicon-github-original fs-5 px-2"></i>
             Github
