@@ -93,6 +93,11 @@ i {
     object-fit: cover;
     object-position: top;
     border: var(--primary) 10px solid;
+    cursor: zoom-in;
+}
+
+#zoomed-img{
+    cursor: zoom-out;
 }
 
 .thumbnail {
@@ -104,11 +109,11 @@ i {
     object-position: top;
 }
 
-.thumbnail:hover {
+.thumbnail:hover, .thumbnail.active {
     border: white 6px solid;
     transition: transform 0.3s ease, opacity 0.3s ease;
     transform: scale(1.1);
-    cursor:pointer;
+    cursor: pointer;
 }
 
 section {
@@ -137,6 +142,10 @@ section {
         width: 35vw;
         height: 35vw;
         margin-top: 20px;
+    }
+
+    #main-image {
+        max-height: 780px;
     }
 }
 
