@@ -15,7 +15,7 @@ export default function Home() {
     <main>
       <section className="p-4 p-md-5">
         <div className="d-flex flex-row justify-content-between">
-          <div className="d-flex flex-column justify-content-center gap-3">
+          <div className="d-flex flex-column justify-content-center gap-md-3 gap-5 pt-3 pt-md-1">
             <h1 className="fs-2">
               Hello, I'm
               <span className="text-light-emphasis"> Gabriel Vich</span>

@@ -20,7 +20,7 @@ export default function ExpandedProject({
         <div className="text-center py-3">
           <h1>{title}</h1>
         </div>
-        <div className="d-flex flex-column flex-md-row  justify-content-center gap-3 mt-2 mb-2 mb-md-5 max-width-900 mx-auto">
+        <div className="d-flex flex-column flex-md-row  justify-content-center gap-0 gap-md-3 mt-2 mb-2 mb-md-5 max-width-900 mx-auto">
           <img id="main-image" src={mainImage} alt={title} />
 
           {/* Miniaturas en lateral o debajo, aquí simplificado en horizontal */}
