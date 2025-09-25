@@ -22,12 +22,12 @@ export default function Home() {
             </h1>
             <h2 className="text-gray fs-1">Front End Developer</h2>
             <div className="tags d-flex flex-row gap-3">
-              <div className="tag bg-primary p-2 p-md-3 rounded-4">
+              <div className="tag bg-primary p-2 p-md-3 rounded-4 flex-column">
                 <h3 className="text-light-emphasis">+2 years</h3>
                 <p>working experience</p>
               </div>
 
-              <div className="tag bg-primary p-2 p-md-3 rounded-4">
+              <div className="tag bg-primary p-2 p-md-3 rounded-4 flex-column">
                 <h3 className="text-light-emphasis">+3 years</h3>
                 <p>Learning & solo projects</p>
               </div>
